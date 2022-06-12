@@ -1,2 +1,2 @@
 [Service]
-Environment="HTTP_PROXY=$HTTPS_PROXY"
+Environment="HTTPS_PROXY=$HTTPS_PROXY"
