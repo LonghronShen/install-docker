@@ -2,6 +2,8 @@
 
 set -x
 
+sed -i -E 's/http:\/\/(.*\.)?(archive|security).ubuntu.com/https:\/\/mirrors.aliyun.com/g' /etc/apt/sources.list
+
 echo "Checking docker..."
 if [[ "$(which docker)" == "" ]]; then
     echo "Docker not found. Installing."
